@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Surprise</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating Hearts Background -->
+<div class="hearts">
+<span style="left:10%">❤️</span>
+<span style="left:25%">💖</span>
+<span style="left:40%">❤️</span>
+<span style="left:55%">💗</span>
+<span style="left:70%">❤️</span>
+<span style="left:85%">💖</span>
+</div>
+
+
+<!-- Gift Start Screen -->
+<div class="gift-container" onclick="openGift()">
+
+<div class="gift-box">🎁</div>
+
+<div id="kitty" class="kitty">🐱</div>
+
+<p>Click the gift to open your surprise 🎉</p>
+
+</div>
+
+
+<!-- Main Birthday Page -->
+<div id="mainPage" class="hidden">
+
+<h1>🎉 Happy Birthday My Best Friend 🎉</h1>
+<p>Welcome to your birthday surprise ❤️</p>
+
+<div class="menu">
+<a href="wish.html">💌 Wish</a>
+<a href="memories.html">📸 Memories</a>
+<a href="video.html">🎬 Video</a>
+</div>
+
+<button onclick="showCake()">🎂 Cut the Cake</button>
+
+</div>
+
+
+<!-- Cake Popup -->
+<div id="cakeBox" class="cakeBox">
+
+<h2>🎂 Make a Wish!</h2>
+
+<div class="cake-scene">
+
+<div class="cake" id="cake">
+
+<div class="cake-part left">🍰</div>
+<div class="cake-part right">🍰</div>
+
+<div class="candles" id="candles">🕯 🕯 🕯</div>
+
+</div>
+
+<div class="knife" id="knife">🔪</div>
+
+</div>
+
+<p>Click the button to cut the cake 🎉</p>
+
+<button onclick="cutCake()">Cut Cake</button>
+<button onclick="closeCake()">Close</button>
+
+</div>
+
+
+<!-- Birthday Music -->
+<audio id="bdayMusic">
+<source src="birthday.mp3" type="audio/mpeg">
+</audio>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
